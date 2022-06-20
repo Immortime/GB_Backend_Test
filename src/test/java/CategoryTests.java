@@ -23,7 +23,7 @@ public class CategoryTests extends AbstractClass {
     public CategoryTests() throws IOException {
     }
 
-    public Categories ormMethod() throws IOException {
+    public Categories ormMethod() {
         try (SqlSession session = sessionFactory.openSession()) {
             CategoriesMapper categoriesMapper = session.getMapper(CategoriesMapper.class);
 

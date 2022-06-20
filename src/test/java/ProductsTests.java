@@ -24,7 +24,7 @@ public class ProductsTests extends AbstractClass {
     public ProductsTests() throws IOException {
     }
 
-    public List<Products> ormMethod() throws IOException {
+    public List<Products> ormMethod() {
         try (SqlSession session = sessionFactory.openSession()) {
             ProductsMapper productsMapper = session.getMapper(ProductsMapper.class);
             ProductsExample example = new ProductsExample();
